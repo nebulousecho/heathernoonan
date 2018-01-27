@@ -1,0 +1,1 @@
+<a href="add-photos.php">Upload Photos</a>
