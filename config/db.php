@@ -1,17 +1,13 @@
 <?php
-	$user = 'root';
-	$password = 'root';
-	$db = 'hnoonan';
-	$host = 'localhost';
-	$port = 8889;
+	$servername = "localhost";
+	$username = "root";
+	$password = "root";
+	$dbname = "hnoonan";
 
-	$link = mysqli_init();
-	$success = mysqli_real_connect(
-	   $link, 
-	   $host, 
-	   $user, 
-	   $password, 
-	   $db,
-	   $port
-	);
+	// Create connection
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	// Check connection
+	if (!$conn) {
+	    die("Connection failed: " . mysqli_connect_error());
+	}
 ?>

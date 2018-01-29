@@ -1,5 +1,5 @@
 <?php
-require '/config/db.php';
+require '../config/db.php';
 
 $target_dir = "../../uploads/";
 $uploadOk = 1;
